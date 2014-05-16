@@ -1,0 +1,11 @@
+#!/bin/csh
+
+set file = $argv[1]
+
+  diff daily/$file'.f' aveann/$file'.f'
+  diff daily/$file'.f' allyear/$file'.f'
+  diff daily/$file'.f' allmonth/$file'.f'
+  diff aveann/$file'.f' allyear/$file'.f'
+  diff aveann/$file'.f' allmonth/$file'.f'
+  diff allyear/$file'.f' allmonth/$file'.f'
+

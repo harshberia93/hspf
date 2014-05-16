@@ -1,0 +1,184 @@
+********** phase 5.3 calibrated land uses for all calibration types
+
+**** start and end time, must have exactly two lines in this table
+TIME
+1984 01 01
+2005 12 31
+END TIME
+
+*** for land cover, use the four points available and interpolate between
+CROP COVER
+year mo da <-file------------->***
+1985 07 01 p53cal_1985
+1987 07 01 p53cal_1987
+1992 07 01 p53cal_1992
+1997 07 01 p53cal_1997
+2002 07 01 p53cal_2002
+2005 07 01 p53cal_2005
+END CROP COVER
+
+DETS
+year mo da <-file------------->***
+1985 07 01 p53cal_1985
+1987 07 01 p53cal_1987
+1992 07 01 p53cal_1992
+1997 07 01 p53cal_1997
+2002 07 01 p53cal_2002
+2005 07 01 p53cal_2005
+END DETS
+
+FERTILIZER
+year mo da <-file------------->***
+1985 07 01 p53cal_1985
+1987 07 01 p53cal_1987
+1992 07 01 p53cal_1992
+1997 07 01 p53cal_1997
+2002 07 01 p53cal_2002
+2005 07 01 p53cal_2005
+END FERTILIZER
+
+MANURE
+year mo da <-file------------->***
+1985 07 01 p53cal_1985
+1987 07 01 p53cal_1987
+1992 07 01 p53cal_1992
+1997 07 01 p53cal_1997
+2002 07 01 p53cal_2002
+2005 07 01 p53cal_2005
+END MANURE
+
+LEGUME
+year mo da <-file------------->***
+1985 07 01 p53cal_1985
+1987 07 01 p53cal_1987
+1992 07 01 p53cal_1992
+1997 07 01 p53cal_1997
+2002 07 01 p53cal_2002
+2005 07 01 p53cal_2005
+END LEGUME
+
+TOTAL UPTAKE
+year mo da <-file------------->***
+1985 07 01 p53cal_1985
+1987 07 01 p53cal_1987
+1992 07 01 p53cal_1992
+1997 07 01 p53cal_1997
+2002 07 01 p53cal_2002
+2005 07 01 p53cal_2005
+END TOTAL UPTAKE
+
+MONTHLY FRACTION UPTAKE
+year mo da <-file------------->***
+1985 07 01 p53cal_1985
+1987 07 01 p53cal_1987
+1992 07 01 p53cal_1992
+1997 07 01 p53cal_1997
+2002 07 01 p53cal_2002
+2005 07 01 p53cal_2005
+END MONTHLY FRACTION UPTAKE
+
+********** default crop data to be used
+******** if there are missing values for
+******** for a given land use, lseg, and data type
+******* for uptake, fertlizer, manure, legume, or crop cover
+DEFAULT CROPDATA
+year mo da <-file------------->***
+1992 07 01 p53cal_full
+END DEFAULT CROPDATA
+
+SPECIAL ACTION FLAGS
+p53
+END SPECIAL ACTION FLAGS
+
+PRECIP ATMOS DEPOSITION
+ns611a902
+END PRECIP ATMOS DEPOSITION
+
+METEOROLOGY
+js8405xyz
+END METEOROLOGY
+
+PARAMETERS
+p53cal
+END PARAMETERS
+
+*** set of I/O specifications under ./catalog/iovars/
+IOVARS
+p53
+END IOVARS
+
+*** specifications that contain the total list of land and river
+*** segments and the connections between them
+GEOMETRY
+p53
+END GEOMETRY
+
+*** perlnd modules to turn on.  First line is pervious land uses, followed by active modules
+
+
+*** PQUAL land uses
+PER MODULES
+hvf urs trp ext bar 
+ATEMP
+SNOW
+PWATER
+SEDMNT
+PSTEMP
+PWTGAS
+PQUAL
+END PER MODULES
+
+****** AGCHEM land uses 
+PER MODULES
+hom nho hwm nhi lwm nlo alf nal
+ATEMP
+SNOW
+PWATER
+SEDMNT
+PSTEMP
+PWTGAS
+MSTLAY
+NITR
+PHOS
+END PER MODULES
+
+*** AGCHEM/PQUAL land uses.  These three land uses are a combination of 
+******** AGCHEM and PQUAL, PQUAL is used for inorganic P
+**********  all constituents are simulated for PQUAL, but only P is connected
+PER MODULES
+for puh pul pas npa hyw nhy hyo 
+ATEMP
+SNOW
+PWATER
+SEDMNT
+PSTEMP
+PWTGAS
+MSTLAY
+NITR
+PQUAL
+END PER MODULES
+
+*** implnd modules.  First line is impervious land uses
+******* active modules on following lines
+IMP MODULES
+afo iml imh css
+ATEMP
+SNOW
+IWATER
+SOLIDS
+IWTGAS
+IQUAL
+END IMP MODULES
+
+*** calibration scenario reference for land P/I QUAL parameter modification
+CALIBSCEN
+p53cal
+END CALIBSCEN
+
+****** pltgens for SEDMNT
+***PLTGEN
+***for hvf pul puh bar ext pas trp urs alf hyw hyo hom hwm lwm nhy npa nal nho nhi nlo
+***dets SEDMNT DETS 0 0 AVER MEAN -2 AVER daily_average_mass_det_storage_in_tons
+***END PLTGEN
+
+end

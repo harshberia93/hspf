@@ -1,0 +1,19 @@
+
+
+
+ Data set number   =   103
+  Station number   = 11517500        
+  Station name     = Shasta River near Yreka, CA.                    
+  Data type        = L003
+  Starting year    =  1935
+  Ending year      =  1982
+  Minimum value    =           0.    
+  Maximum value    =     1000000.    
+  Qualifiers       =    30 | 34678       
+  Values used      =    44
+  Values skipped   =     4
+  Return code      =     0
+  error count      =     0
+  Kendall's tau    =     0.020
+  P-level          =     0.856
+  Median slope     =     0.025

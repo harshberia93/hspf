@@ -1,0 +1,7 @@
+ f77 -c main.f
+ f77 -c make1type.f
+
+ f77 -o ../../../../bin/sumWTMPstats.exe main.o make1type.o ../../../lib/util_lib.a
+
+ rm *.o
+

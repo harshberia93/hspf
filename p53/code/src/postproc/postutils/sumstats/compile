@@ -1,0 +1,8 @@
+ f77 -c main.f
+ f77 -c make1type.f
+ f77 -c makeptype.f
+
+ f77 -o ../../../../bin/summarystats.exe main.o make1type.o makeptype.o ../../../lib/util_lib.a
+
+ rm *.o
+

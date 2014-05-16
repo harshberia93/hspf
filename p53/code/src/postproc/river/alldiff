@@ -1,0 +1,54 @@
+diff stats/compile /model/p57g/pp/src/postproc/river/stats/compile
+3c3
+< set libdir = /usr/opt/wrdapp/lib3.2/lib/
+---
+> source ../../../../set_libdir
+diff stats/loadstats.f /model/p57g/pp/src/postproc/river/stats/loadstats.f
+56c56
+<       if (err.ne.0) go to 991
+---
+>       if (err.ne.0) obar = -9
+59c59
+<       if (err.ne.0) go to 992
+---
+>       if (err.ne.0) sbar = -9
+62c62
+<       if (err.ne.0) go to 991
+---
+>       if (err.ne.0) ovar = -9
+65c65
+<       if (err.ne.0) go to 992
+---
+>       if (err.ne.0) svar = -9
+68c68
+<       if (err.ne.0) go to 993
+---
+>       if (err.ne.0) evar = -9
+71c71
+<       if (err.ne.0) go to 993
+---
+>       if (err.ne.0) r = -9
+99c99
+<       if (err.ne.0) go to 991
+---
+>       if (err.ne.0) olbar = -9
+102c102
+<       if (err.ne.0) go to 992
+---
+>       if (err.ne.0) slbar = -9
+105c105
+<       if (err.ne.0) go to 991
+---
+>       if (err.ne.0) olvar = -9
+108c108
+<       if (err.ne.0) go to 992
+---
+>       if (err.ne.0) slvar = -9
+111c111
+<       if (err.ne.0) go to 993
+---
+>       if (err.ne.0) elvar = -9
+114c114
+<       if (err.ne.0) go to 993
+---
+>       if (err.ne.0) rl = -9

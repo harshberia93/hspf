@@ -1,0 +1,17 @@
+#!/bin/csh
+
+ set usrdir = ../../../../lib
+ set usrlib = ($usrdir/get_lib.a $usrdir/util_lib.a)
+
+f77 -c read_dotout.f
+
+f77 -o ../../../../../bin/test_readout.exe read_dotout.o $usrlib
+
+##ar rv caliter.a findcolumn.o allcolumns.o ioparvar.o minmax.o readcontrol_paramscen.o readcontrol_lscens.o getall.o getlufacs.o zipall.o printall.o
+
+rm *.o
+
+### this compile script only forms the objects.  The final linkage
+###  is done in the run script that starts the whole iteration process
+###  The objects in this directory are linked with function objects in
+###  ./run/control/calib/$calscen/$calscen_sensitivities.o

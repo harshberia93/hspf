@@ -1,0 +1,14 @@
+f77 -c getriver.f
+f77 -c getvars.f
+f77 -c getwateracres.f
+f77 -c masslink.f
+f77 -c readcontrol_twdm.f
+f77 -c readdailydat.f
+f77 -c readpair.f
+f77 -c readriver.f
+f77 -c riverbay.f
+f77 -c Rmasslink.f
+
+ar rv wqmlib.a getriver.o getvars.o getwateracres.o masslink.o readcontrol_twdm.o readdailydat.o readpair.o readriver.o riverbay.o Rmasslink.o
+
+rm *.o

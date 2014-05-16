@@ -1,0 +1,331 @@
+
+
+  DSN     1:    adding attributes
+
+                Name       Value
+                TCODE          4
+                TGROUP         6
+                TSFORM         1
+                COMPFG         1
+                VBTIME         1
+                TSBYR       1960
+                TSSTEP         1
+                ISTAID  11516530
+                PARMCD        60
+                STATCD         3
+                TSFILL  -99999.0    
+                DAREA    4630.00    
+                STAID       11516530        
+                TSTYPE      FLOW
+                STANAM      Klamath River below Iron Gate Dam, CA.          
+                AGENCY      USGS    
+
+
+  DSN     2:    adding attributes
+
+                Name       Value
+                TCODE          4
+                TGROUP         6
+                TSFORM         1
+                COMPFG         1
+                VBTIME         1
+                TSBYR       1912
+                TSSTEP         1
+                ISTAID  11520500
+                PARMCD        60
+                STATCD         3
+                TSFILL  -99999.0    
+                DAREA    6940.00    
+                STAID       11520500        
+                TSTYPE      FLOW
+                STANAM      Klamath River near Seiad Valley, CA.            
+                AGENCY      USGS    
+
+
+  DSN     3:    adding attributes
+
+                Name       Value
+                TCODE          4
+                TGROUP         6
+                TSFORM         1
+                COMPFG         1
+                VBTIME         1
+                TSBYR       1933
+                TSSTEP         1
+                ISTAID  11517500
+                PARMCD        60
+                STATCD         3
+                TSFILL  -99999.0    
+                DAREA    793.000    
+                STAID       11517500        
+                TSTYPE      FLOW
+                STANAM      Shasta River near Yreka, CA.                    
+                AGENCY      USGS    
+
+
+  DSN     4:    adding attributes
+
+                Name       Value
+                TCODE          4
+                TGROUP         6
+                TSFORM         1
+                COMPFG         1
+                VBTIME         1
+                TSBYR       1941
+                TSSTEP         1
+                ISTAID  11519500
+                PARMCD        60
+                STATCD         3
+                TSFILL  -99999.0    
+                DAREA    653.000    
+                STAID       11519500        
+                TSTYPE      FLOW
+                STANAM      Scott River near Fort Jones, CA.                
+                AGENCY      USGS    
+
+
+  DSN     5:    adding attributes
+
+                Name       Value
+                TCODE          6
+                TSSTEP         1
+                ISTAID   1373500
+                STFIPS        36
+                DSCODE        36
+                TSFILL  -99999.0    
+                LATDEG   41.5100    
+                LNGDEG   73.9500    
+                CONTDA   190.000    
+                STAID       01373500        
+                TSTYPE      PEAK
+                STANAM      FISHKILL CR AT BEACON NY                        
+
+
+  DSN     6:    adding attributes
+
+                Name       Value
+                TCODE          6
+                TSSTEP         1
+                ISTAID   6600500
+                STFIPS        19
+                DSCODE        19
+                TSFILL  -99999.0    
+                LATDEG   42.5800    
+                LNGDEG   96.3100    
+                CONTDA   882.000    
+                STAID       06600500        
+                TSTYPE      PEAK
+                STANAM      FLOYD RIVER AT JAMES, IOWA                      
+
+
+  DSN     7:    adding attributes
+
+                Name       Value
+                TCODE          6
+                TSSTEP         1
+                ISTAID   1614000
+                STFIPS        54
+                DSCODE        54
+                TSFILL  -99999.0    
+                LATDEG   39.5100    
+                LNGDEG   78.0400    
+                CONTDA   243.000    
+                STAID       01614000        
+                TSTYPE      PEAK
+                STANAM      BACK CREEK NEAR JONES SPRINGS,W.VA.             
+
+
+  DSN     8:    adding attributes
+
+                Name       Value
+                TCODE          6
+                TSSTEP         1
+                ISTAID  11274500
+                STFIPS         6
+                DSCODE         6
+                TSFILL  -99999.0    
+                LATDEG   37.3200    
+                LNGDEG   121.130    
+                CONTDA   134.000    
+                STAID       11274500        
+                TSTYPE      PEAK
+                STANAM      ORESTIMBA CREEK NEAR NEWMAN CALIF               
+
+
+  DSN     9:    adding attributes
+
+                Name       Value
+                TCODE          6
+                TSSTEP         1
+                ISTAID   3339500
+                STFIPS        18
+                DSCODE        18
+                TSFILL  -99999.0    
+                LATDEG   40.0489    
+                LNGDEG   86.8989    
+                CONTDA   509.000    
+                STAID       03339500        
+                TSTYPE      PEAK
+                STANAM      SUGAR CREEK AT CRAWFORDSVILLE, IND.             
+
+
+  DSN    10:    adding attributes
+
+                Name       Value
+                TCODE          6
+                TGROUP         7
+                TSFORM         1
+                COMPFG         1
+                VBTIME         1
+                TSBYR       1800
+                TSSTEP         1
+                ISTAID   1373500
+                STFIPS        36
+                DSCODE        36
+                TSFILL  -99999.0    
+                LATDEG   41.5100    
+                LNGDEG   73.9500    
+                CONTDA   190.000    
+                STAID       01373500        
+                TSTYPE      PEAK
+                STANAM      FISHKILL CR AT BEACON NY                        
+                SEASBG        10
+                SEASND         9
+
+
+  DSN    11:    adding attributes
+
+                Name       Value
+                TCODE          6
+                TGROUP         7
+                TSFORM         1
+                COMPFG         1
+                VBTIME         1
+                TSBYR       1900
+                TSSTEP         1
+                ISTAID   6600500
+                STFIPS        19
+                DSCODE        19
+                TSFILL  -99999.0    
+                LATDEG   42.5800    
+                LNGDEG   96.3100    
+                CONTDA   882.000    
+                STAID       06600500        
+                TSTYPE      PEAK
+                STANAM      FLOYD RIVER AT JAMES, IOWA                      
+                SEASBG        10
+                SEASND         9
+
+
+  DSN    12:    adding attributes
+
+                Name       Value
+                TCODE          6
+                TGROUP         7
+                TSFORM         1
+                COMPFG         1
+                VBTIME         1
+                TSBYR       1900
+                TSSTEP         1
+                ISTAID   1614000
+                STFIPS        54
+                DSCODE        54
+                TSFILL  -99999.0    
+                LATDEG   39.5100    
+                LNGDEG   78.0400    
+                CONTDA   243.000    
+                STAID       01614000        
+                TSTYPE      PEAK
+                STANAM      BACK CREEK NEAR JONES SPRINGS,W.VA.             
+                SEASBG        10
+                SEASND         9
+
+
+  DSN    13:    adding attributes
+
+                Name       Value
+                TCODE          6
+                TGROUP         7
+                TSFORM         1
+                COMPFG         1
+                VBTIME         1
+                TSBYR       1900
+                TSSTEP         1
+                ISTAID  11274500
+                STFIPS         6
+                DSCODE         6
+                TSFILL  -99999.0    
+                LATDEG   37.3200    
+                LNGDEG   121.130    
+                CONTDA   134.000    
+                STAID       11274500        
+                TSTYPE      PEAK
+                STANAM      ORESTIMBA CREEK NEAR NEWMAN CALIF               
+                SEASBG        10
+                SEASND         9
+
+
+  DSN    14:    adding attributes
+
+                Name       Value
+                TCODE          6
+                TGROUP         7
+                TSFORM         1
+                COMPFG         1
+                VBTIME         1
+                TSBYR       1900
+                TSSTEP         1
+                ISTAID   3339500
+                STFIPS        18
+                DSCODE        18
+                TSFILL  -99999.0    
+                LATDEG   40.0489    
+                LNGDEG   86.8989    
+                CONTDA   509.000    
+                STAID       03339500        
+                TSTYPE      PEAK
+                STANAM      SUGAR CREEK AT CRAWFORDSVILLE, IND.             
+                SEASBG        10
+                SEASND         9
+
+
+  DSN    15:    adding attributes
+
+                Name       Value
+                TCODE          6
+                TGROUP         7
+                TSFORM         1
+                COMPFG         1
+                VBTIME         1
+                TSBYR       1800
+                TSSTEP         1
+                ISTAID   1624000
+                PARMCD        60
+                STATCD         3
+                SEASBG         4
+                SEASND         3
+                TSFILL  -99999.0    
+                STAID       01624000        
+                TSTYPE      L007
+                STANAM      Bell Creek near Staunton, Va                    
+
+
+  DSN    16:    adding attributes
+
+                Name       Value
+                TCODE          6
+                TGROUP         7
+                TSFORM         1
+                COMPFG         1
+                VBTIME         1
+                TSBYR       1800
+                TSSTEP         1
+                ISTAID   3168500
+                PARMCD        60
+                STATCD         3
+                SEASBG         4
+                SEASND         3
+                TSFILL  -99999.0    
+                STAID       03168500        
+                TSTYPE      L007
+                STANAM      Peak Creek at Pulaski, Va                       

@@ -1,0 +1,23 @@
+#!/bin/csh
+
+source ../../../set_wdmlibdir
+set wdmlibdir = ../../$wdmlibdir
+set lib1 = $wdmlibdir/wdmlib.a
+set lib2 = $wdmlibdir/adwdmlib.a
+set lib3 = $wdmlibdir/utillib.a
+set usrdir = ../../lib/
+set usrlib = ($usrdir/get_lib.a $usrdir/util_lib.a)
+set dsnlib = ../../lib/dsn/dsn_utils.o
+
+f77 -c main_calib_phase53.f
+f77 -c main_p53_scenario_from_csv.f
+f77 -c main_year_p53_scenario_from_calib.f
+
+f77 -o ../../../bin/create_phase53_calib_ps_wdms.exe main_calib_phase53.o $usrlib $dsnlib $lib1 $lib2 $lib3
+
+f77 -o ../../../bin/create_p53_scenario_ps_wdms_from_csv main_p53_scenario_from_csv.o $usrlib $dsnlib $lib1 $lib2 $lib3
+
+f77 -o ../../../bin/create_p53_year_scenario_ps_wdms_from_calib main_year_p53_scenario_from_calib.o $usrlib $dsnlib $lib1 $lib2 $lib3
+
+
+rm *.o

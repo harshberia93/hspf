@@ -1,0 +1,10 @@
+f77 -c main_rseg.f
+f77 -c readDATaveann.f
+f77 -c readEOaveann.f
+
+rm sumout.a
+
+ar rv sumout.a main_rseg.o readDATaveann.o readEOaveann.o 
+
+ rm *.o
+

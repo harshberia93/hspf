@@ -1,0 +1,64 @@
+
+
+                Log-Pearson Type III Statistics
+                           SWSTAT 4.1 
+                  (based on USGS Program A193)
+
+  Notice -- Use of Log-Pearson Type III or Pearson-Type III
+            distributions are for preliminary computations.
+            User is responsible for assessment and 
+            interpretation.
+
+
+               11517500 Shasta River near Yreka, CA.                           
+                   April  1 - start of season
+                   March 31 - end of season
+                1935 - 1982 - time period
+                  7-day low - parameter
+                         44 - non-zero values
+                          0 - zero values
+                          4 - negative values (ignored)
+
+            8.786       8.500       9.500       8.857      67.857
+            5.471      36.286      24.286      25.571      17.000
+           20.571      11.943       9.700      13.286      31.286
+           24.714      15.714       6.671      52.286      12.857
+           52.000      11.143       6.414      11.357      13.000
+           36.143      12.357      38.143      10.229      19.000
+            7.114      25.571      14.714      24.143      17.429
+           11.743      47.286      41.143      14.571       8.814
+           31.286      13.843      17.429       5.800
+
+
+  The following 7 statistics are based on non-zero values:
+
+  Mean (logs)                                  1.218
+  Variance (logs)                              0.080
+  Standard Deviation (logs)                    0.283
+  Skewness (logs)                              0.331
+  Standard Error of Skewness (logs)            0.357
+  Serial Correlation Coefficient (logs)       -0.247
+  Coefficient of Variation (logs)              0.232
+
+
+       Non-exceedance     Recurrence        Parameter
+        Probability        Interval           Value  
+        -----------       ----------        ---------
+             0.0100           100.00            4.261
+             0.0200            50.00            4.881
+             0.0500            20.00            6.040
+             0.1000            10.00            7.366
+             0.2000             5.00            9.481
+             0.3333             3.00           12.128
+             0.5000             2.00           15.951
+             0.8000             1.25           28.237
+             0.9000             1.11           38.860
+             0.9600             1.04           55.511
+             0.9800             1.02           70.522
+             0.9900             1.01           87.995
+
+
+   12 statistics were added as attributes to data set   104:
+
+          MEANND SDND   SKWND  NUMZRO NONZRO LDIST 
+          L07100 L07050 L07020 L07010 L07005 L07002

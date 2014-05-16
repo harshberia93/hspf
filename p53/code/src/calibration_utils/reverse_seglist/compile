@@ -1,0 +1,10 @@
+#!/bin/csh
+
+set usrdir = ../../lib
+set usrlib = ($usrdir/get_lib.a $usrdir/util_lib.a)
+
+f77 -c main.f
+
+f77 -o ../../../../config/seglists/reverse_seglist.exe main.o $usrlib
+
+rm *.o

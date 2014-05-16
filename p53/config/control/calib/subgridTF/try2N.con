@@ -1,0 +1,14 @@
+*** WQ parameter N or P
+WQparam N
+
+*** EOF data set, contains all rseg EOF loads
+EOF baseG
+
+*** EOS data set, contains all rseg point source, atdep, and septic EOS loads
+EOS baseG
+
+*** river calculated transport factors from Sparrow
+attenuation sparrow0701
+
+*** estimator data
+estimator_data pingjeff2

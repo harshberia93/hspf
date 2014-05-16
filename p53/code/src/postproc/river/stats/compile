@@ -1,0 +1,33 @@
+#!/bin/csh
+
+source ../../../../set_wdmlibdir
+set wdmlibdir = ../../../$wdmlibdir
+set lib1 = $wdmlibdir/wdmlib.a
+set lib2 = $wdmlibdir/adwdmlib.a
+set lib3 = $wdmlibdir/utillib.a
+set usrdir = ../../../lib
+set usrlib = ($usrdir/get_lib.a $usrdir/util_lib.a)
+set dsnlib = ../../../lib/dsn/dsn_utils.o
+
+f77 -c main.f
+f77 -c single.f
+f77 -c loadinfo.f
+f77 -c concinfo.f
+f77 -c gethours.f
+f77 -c flowstats.f
+f77 -c wqstats.f
+f77 -c peaks.f
+f77 -c plt2cal.f
+f77 -c doflows.f
+f77 -c doloads.f
+f77 -c doconcs.f
+f77 -c readtau.f
+f77 -c windowstats.f
+f77 -c monthlybias.f
+f77 -c vodkatest.f
+f77 -c VAstats.f
+f77 -c avmoneff.f
+
+f77 -o ../../../../bin/Rstats.exe loadinfo.o concinfo.o main.o flowstats.o wqstats.o gethours.o single.o peaks.o plt2cal.o doflows.o doloads.o doconcs.o readtau.o windowstats.o monthlybias.o vodkatest.o VAstats.o avmoneff.o $dsnlib $lib1 $lib2 $lib3 ../postriverlib.a $usrlib ../part/part_sub.o
+
+rm *.o

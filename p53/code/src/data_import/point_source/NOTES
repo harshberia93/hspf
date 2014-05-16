@@ -1,0 +1,14 @@
+10/1/2007
+
+The old_code directory has some useful files in it for generating 
+scenario data.  It was all moved to that directory as the point source 
+method has changed as of this date.
+
+All point source data are now supplied to the modeling side referenced 
+by NPDES number.  The same point source data set is then used to make
+wdms for both the watershed model and input to the water quality and 
+hydrodynamic bay models.  Taking all three data sets out of a single
+file reduces error in translation.
+
+
+

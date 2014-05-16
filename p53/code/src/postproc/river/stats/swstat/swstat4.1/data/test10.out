@@ -1,0 +1,88 @@
+1
+
+
+Summary of data sets used or created by swstat tests.
+  DSN   PERIOD OF RECORD    SEASBG  SEADBG  SEASND  SEADND  TSTYPE  STANAM
+        BEGIN        END
+----- --------------------- ------  ------  ------  ------  ------  ------------------------------------------------
+    1  1960/10/1  1982/9/30                                 FLOW    Klamath River below Iron Gate Dam, CA.
+    2  1912/10/1  1982/9/30                                 FLOW    Klamath River near Seiad Valley, CA.
+    3  1933/10/1  1982/9/30                                 FLOW    Shasta River near Yreka, CA.
+    4  1941/10/1  1982/9/30                                 FLOW    Scott River near Fort Jones, CA.
+    5                                                       PEAK    FISHKILL CR AT BEACON NY
+    6                                                       PEAK    FLOYD RIVER AT JAMES, IOWA
+    7                                                       PEAK    BACK CREEK NEAR JONES SPRINGS,W.VA.
+    8                                                       PEAK    ORESTIMBA CREEK NEAR NEWMAN CALIF
+    9                                                       PEAK    SUGAR CREEK AT CRAWFORDSVILLE, IND.
+   10  1882/1/1   1984/12/31    10               9          PEAK    FISHKILL CR AT BEACON NY
+   11  1935/1/1   1987/12/31    10               9          PEAK    FLOYD RIVER AT JAMES, IOWA
+   12  1929/1/1   1975/12/31    10               9          PEAK    BACK CREEK NEAR JONES SPRINGS,W.VA.
+   13  1932/1/1   1986/12/31    10               9          PEAK    ORESTIMBA CREEK NEAR NEWMAN CALIF
+   14  1913/1/1   1986/12/31    10               9          PEAK    SUGAR CREEK AT CRAWFORDSVILLE, IND.
+   15  1950/1/1   1956/12/31     4               3          L007    Bell Creek near Staunton, Va
+   16  1929/1/1   1957/12/31     4               3          L007    Peak Creek at Pulaski, Va
+  101  1935/1/1   1982/12/31     4       1       3      31  L001    Shasta River near Yreka, CA.
+  102  1935/1/1   1982/12/31     4       1       3      31  L002    Shasta River near Yreka, CA.
+  103  1935/1/1   1982/12/31     4       1       3      31  L003    Shasta River near Yreka, CA.
+  104  1935/1/1   1982/12/31     4       1       3      31  L007    Shasta River near Yreka, CA.
+  105  1935/1/1   1982/12/31     4       1       3      31  L010    Shasta River near Yreka, CA.
+  106  1935/1/1   1982/12/31     4       1       3      31  L030    Shasta River near Yreka, CA.
+  107  1935/1/1   1982/12/31     4       1       3      31  L060    Shasta River near Yreka, CA.
+  108  1935/1/1   1982/12/31     4       1       3      31  L090    Shasta River near Yreka, CA.
+  109  1935/1/1   1982/12/31     4       1       3      31  L183    Shasta River near Yreka, CA.
+  110  1935/1/1   1982/12/31     4       1       3      31  L365    Shasta River near Yreka, CA.
+  111  1934/1/1   1982/12/31    10       1       9      30  H001    Shasta River near Yreka, CA.
+  112  1934/1/1   1982/12/31    10       1       9      30  H002    Shasta River near Yreka, CA.
+  113  1934/1/1   1982/12/31    10       1       9      30  H003    Shasta River near Yreka, CA.
+  114  1934/1/1   1982/12/31    10       1       9      30  H007    Shasta River near Yreka, CA.
+  115  1934/1/1   1982/12/31    10       1       9      30  H010    Shasta River near Yreka, CA.
+  116  1934/1/1   1982/12/31    10       1       9      30  H030    Shasta River near Yreka, CA.
+  117  1934/1/1   1982/12/31    10       1       9      30  H060    Shasta River near Yreka, CA.
+  118  1934/1/1   1982/12/31    10       1       9      30  H090    Shasta River near Yreka, CA.
+  119  1934/1/1   1982/12/31    10       1       9      30  H183    Shasta River near Yreka, CA.
+  120  1934/1/1   1982/12/31    10       1       9      30  H365    Shasta River near Yreka, CA.
+  150  1960/1/1   1970/12/31     6      15       9      15  L007    Shasta River near Yreka, CA.
+  151  1960/1/1   1970/12/31     6      15       9      15  H007    Shasta River near Yreka, CA.
+  152  1960/1/1   1970/12/31     6      15       9      15  L007    Klamath River below Iron Gate Dam, CA.
+  153  1960/1/1   1970/12/31     6      15       9      15  H007    Klamath River below Iron Gate Dam, CA.
+  154  1960/1/1   1970/12/31     6      15       9      15  L007    Klamath River near Seiad Valley, CA.
+  155  1960/1/1   1970/12/31     6      15       9      15  H007    Klamath River near Seiad Valley, CA.
+  160  1960/1/1   1982/12/31     6      15       9      15  L007    Shasta River near Yreka, CA.
+  161  1960/1/1   1982/12/31     6      15       9      15  L030    Shasta River near Yreka, CA.
+  162  1960/1/1   1982/12/31     6      15       9      15  L060    Shasta River near Yreka, CA.
+  163  1960/1/1   1982/12/31     6      15       9      15  L004    Shasta River near Yreka, CA.
+  164  1960/1/1   1982/12/31     6      15       9      15  H007    Shasta River near Yreka, CA.
+  165  1960/1/1   1982/12/31     6      15       9      15  L007    Klamath River below Iron Gate Dam, CA.
+  166  1960/1/1   1982/12/31     6      15       9      15  L030    Klamath River below Iron Gate Dam, CA.
+  167  1960/1/1   1982/12/31     6      15       9      15  L060    Klamath River below Iron Gate Dam, CA.
+  168  1960/1/1   1982/12/31     6      15       9      15  L004    Klamath River below Iron Gate Dam, CA.
+  169  1960/1/1   1982/12/31     6      15       9      15  H007    Klamath River below Iron Gate Dam, CA.
+  170  1960/1/1   1982/12/31     6      15       9      15  L007    Klamath River near Seiad Valley, CA.
+  171  1960/1/1   1982/12/31     6      15       9      15  L030    Klamath River near Seiad Valley, CA.
+  172  1960/1/1   1982/12/31     6      15       9      15  L060    Klamath River near Seiad Valley, CA.
+  173  1960/1/1   1982/12/31     6      15       9      15  L004    Klamath River near Seiad Valley, CA.
+  174  1960/1/1   1982/12/31     6      15       9      15  H007    Klamath River near Seiad Valley, CA.
+  201  1960/1/1   1982/12/31     5       1       5      31  L007    Shasta River near Yreka, CA.
+  202  1960/1/1   1982/12/31     5       1       5      31  L030    Shasta River near Yreka, CA.
+  203  1960/1/1   1982/12/31     6       1       6      30  L007    Shasta River near Yreka, CA.
+  204  1960/1/1   1982/12/31     6       1       6      30  L030    Shasta River near Yreka, CA.
+  205  1960/1/1   1982/12/31     7       1       7      31  L007    Shasta River near Yreka, CA.
+  206  1960/1/1   1982/12/31     7       1       7      31  L030    Shasta River near Yreka, CA.
+  207  1960/1/1   1982/12/31     8       1       8      31  L007    Shasta River near Yreka, CA.
+  208  1960/1/1   1982/12/31     8       1       8      31  L030    Shasta River near Yreka, CA.
+  209  1960/1/1   1982/12/31     5       1       5      31  L007    Klamath River below Iron Gate Dam, CA.
+  210  1960/1/1   1982/12/31     5       1       5      31  L030    Klamath River below Iron Gate Dam, CA.
+  211  1960/1/1   1982/12/31     6       1       6      30  L007    Klamath River below Iron Gate Dam, CA.
+  212  1960/1/1   1982/12/31     6       1       6      30  L030    Klamath River below Iron Gate Dam, CA.
+  213  1960/1/1   1982/12/31     7       1       7      31  L007    Klamath River below Iron Gate Dam, CA.
+  214  1960/1/1   1982/12/31     7       1       7      31  L030    Klamath River below Iron Gate Dam, CA.
+  215  1960/1/1   1982/12/31     8       1       8      31  L007    Klamath River below Iron Gate Dam, CA.
+  216  1960/1/1   1982/12/31     8       1       8      31  L030    Klamath River below Iron Gate Dam, CA.
+  217  1960/1/1   1982/12/31     5       1       5      31  L007    Klamath River near Seiad Valley, CA.
+  218  1960/1/1   1982/12/31     5       1       5      31  L030    Klamath River near Seiad Valley, CA.
+  219  1960/1/1   1982/12/31     6       1       6      30  L007    Klamath River near Seiad Valley, CA.
+  220  1960/1/1   1982/12/31     6       1       6      30  L030    Klamath River near Seiad Valley, CA.
+  221  1960/1/1   1982/12/31     7       1       7      31  L007    Klamath River near Seiad Valley, CA.
+  222  1960/1/1   1982/12/31     7       1       7      31  L030    Klamath River near Seiad Valley, CA.
+  223  1960/1/1   1982/12/31     8       1       8      31  L007    Klamath River near Seiad Valley, CA.
+  224  1960/1/1   1982/12/31     8       1       8      31  L030    Klamath River near Seiad Valley, CA.

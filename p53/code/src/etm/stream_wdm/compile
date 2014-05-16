@@ -1,0 +1,21 @@
+#!/bin/csh
+
+source ../../../set_wdmlibdir
+set wdmlibdir = ../../$wdmlibdir
+set lib1 = $wdmlibdir/wdmlib.a
+set lib2 = $wdmlibdir/adwdmlib.a
+set lib3 = $wdmlibdir/utillib.a
+
+f77 -c main.f
+f77 -c Rmasslink.f
+f77 -c checkflow.f
+f77 -c checktime.f
+f77 -c addRwdm.f
+f77 -c Rmasslink_confluence.f
+f77 -c confluence.f
+
+f77 -o ../../../bin/stream_wdm.exe main.o Rmasslink.o checkflow.o checktime.o addRwdm.o ../../lib/dsn/dsn_utils.o $lib1 $lib2 $lib3 ../../lib/get_lib.a ../../lib/util_lib.a
+f77 -o ../../../bin/confluence.exe confluence.o Rmasslink_confluence.o checktime.o checkflow.o addRwdm.o ../../lib/dsn/dsn_utils.o $lib1 $lib2 $lib3 ../../lib/get_lib.a ../../lib/util_lib.a
+
+rm *.o
+

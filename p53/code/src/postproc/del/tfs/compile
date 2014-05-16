@@ -1,0 +1,27 @@
+#!/bin/csh
+
+set usrdir = ../../../lib
+set usrlib = ($usrdir/ttyux.o $usrdir/get_lib.a $usrdir/util_lib.a)
+
+f77 -c anntf.f
+f77 -c avetf.f
+f77 -c datann.f
+f77 -c datave.f
+f77 -c datmon.f
+f77 -c delinfo.f
+f77 -c getloads.f
+f77 -c getRvars.f
+f77 -c getsegload.f
+f77 -c getupstreamload.f
+f77 -c lsegann.f
+f77 -c lsegave.f
+f77 -c lsegmon.f
+f77 -c main.f
+f77 -c montf.f
+f77 -c readcontrol_dat.f
+f77 -c writetfs.f
+
+f77 -o ../../../../bin/TFS.exe main.o anntf.o avetf.o datann.o datave.o datmon.o delinfo.o getloads.o getRvars.o getsegload.o getupstreamload.o lsegann.o lsegave.o lsegmon.o montf.o readcontrol_dat.o writetfs.o $usrlib
+
+rm *.o
+

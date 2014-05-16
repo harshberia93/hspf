@@ -1,0 +1,49 @@
+#!/bin/csh
+
+source ../../set_wdmlibdir
+set wdmlibdir = ../$wdmlibdir
+set lib1 = $wdmlibdir/wdmlib.a
+set lib2 = $wdmlibdir/adwdmlib.a
+set lib3 = $wdmlibdir/utillib.a
+set dsnlib = ../lib/dsn/dsn_utils.o
+
+set usrdir = ../lib
+set usrlib = ($usrdir/ttyux.o $usrdir/get_lib.a $usrdir/util_lib.a)
+
+f77 -c actions.f
+f77 -c extsources.f
+f77 -c exttargets.f
+f77 -c files.f
+f77 -c getScenarioMod.f 
+f77 -c getSpecies2Qual.f
+f77 -c getSpecSpecies.f
+f77 -c getspecflags.f
+f77 -c global.f
+f77 -c lspecact.f
+f77 -c main.f
+f77 -c network.f
+f77 -c opseq.f
+f77 -c pgen.f
+f77 -c PQUALactions.f
+f77 -c readcontrol1key.f
+f77 -c readcontrol_Lmodules.f
+f77 -c readcontrol_Ltime.f
+f77 -c readvalues.f
+f77 -c readrorgn.f
+f77 -c readtables.f
+f77 -c rmMissing.f
+f77 -c uvnames.f
+f77 -c uvquans.f
+f77 -c writeapp.f
+f77 -c writeatdep.f
+f77 -c writeSpecActQual.f
+f77 -c writetables.f
+
+f77 -c main_writeapp_only.f
+f77 -c lspecwrite.f
+f77 -c actionwrite.f
+
+f77 -o ../../bin/lug.exe actions.o extsources.o exttargets.o files.o getScenarioMod.o getSpecies2Qual.o getSpecSpecies.o getspecflags.o global.o lspecact.o main.o network.o opseq.o pgen.o PQUALactions.o readcontrol1key.o readcontrol_Lmodules.o readcontrol_Ltime.o readvalues.o readtables.o rmMissing.o uvnames.o uvquans.o writeapp.o readrorgn.o writeatdep.o writeSpecActQual.o writetables.o $usrlib $dsnlib $lib1 $lib2 $lib3 
+f77 -o ../../bin/write_actions_only.exe actionwrite.o extsources.o exttargets.o files.o getSpecies2Qual.o getScenarioMod.o getSpecSpecies.o getspecflags.o global.o lspecwrite.o main_writeapp_only.o network.o opseq.o pgen.o readcontrol1key.o readcontrol_Lmodules.o readcontrol_Ltime.o readvalues.o rmMissing.o uvnames.o uvquans.o writeapp.o writeatdep.o $usrlib $dsnlib $lib1 $lib2 $lib3 
+
+rm *.o

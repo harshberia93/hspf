@@ -1,0 +1,31 @@
+#!/bin/csh
+
+set usrdir = ../../../lib/
+set usrlib = ($usrdir/ttyux.o $usrdir/get_lib.a $usrdir/util_lib.a)
+
+f77 -c main.f
+f77 -c CalcBasinDFann.f
+f77 -c CalcBasinDFave.f
+f77 -c CalcBasinDFmon.f
+f77 -c CalcResDFann.f
+f77 -c CalcResDFave.f
+f77 -c CalcResDFmon.f
+f77 -c CalcSegDFann.f
+f77 -c CalcSegDFave.f
+f77 -c CalcSegDFmon.f
+f77 -c delinfo.f
+f77 -c downstream.f
+f77 -c findResBasin.f
+f77 -c findupstream.f
+f77 -c getloads.f
+f77 -c getRvars.f
+f77 -c multtfs.f
+f77 -c pourpoint.f
+f77 -c readtfinout.f
+f77 -c writedfs.f
+
+
+f77 -o ../../../../bin/DFS.exe main.o CalcBasinDFann.o CalcBasinDFave.o CalcBasinDFmon.o CalcResDFann.o CalcResDFave.o CalcResDFmon.o CalcSegDFann.o CalcSegDFave.o CalcSegDFmon.o delinfo.o downstream.o findResBasin.o findupstream.o getloads.o getRvars.o multtfs.o pourpoint.o readtfinout.o writedfs.o $usrlib
+
+rm *.o
+

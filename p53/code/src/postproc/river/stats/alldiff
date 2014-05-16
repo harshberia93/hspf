@@ -1,0 +1,51 @@
+134d133
+< 
+148d146
+< 
+160d157
+< 
+163d159
+< 
+166d161
+< 
+303,305c298,305
+<       call calcRC(allqt,allqtplus1,nqtobs,ndaymax,
+<      O            mobs4,mobs5,err)
+<       if (err.ne.0) go to 994
+---
+>       if (nqtobs.eq.0) then
+>         mobs4 = -9.0
+>         mobs5 = -9.0
+>       else
+>         call calcRC(allqt,allqtplus1,nqtobs,ndaymax,
+>      O              mobs4,mobs5,err)
+>         if (err.ne.0) go to 993
+>       end if
+323,327c323,331
+<       call calcRC(allqt,allqtplus1,nqtobs,ndaymax,
+<      O            mobs6,mobs7,err)
+<       if (err.ne.0) go to 994
+< 
+<       if (mobs4.le.0.) then
+---
+>       if (nqtobs.eq.0) then
+>         mobs6 = -9.0
+>         mobs7 = -9.0
+>       else
+>         call calcRC(allqt,allqtplus1,nqtobs,ndaymax,
+>      O              mobs6,mobs7,err)
+>         if (err.ne.0) go to 993
+>       end if
+>       if (msim4.le.0..or.mobs4.le.0.) then
+332c336
+<       if (mobs5.le.0.) then
+---
+>       if (msim4.le.0..or.mobs5.le.0.) then
+337c341
+<       if (mobs6.le.0.) then
+---
+>       if (msim6.le.0..or.mobs6.le.0.) then
+342c346
+<       if (mobs7.le.0.) then
+---
+>       if (msim7.le.0..or.mobs7.le.0.) then

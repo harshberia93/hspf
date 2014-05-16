@@ -1,0 +1,31 @@
+#!/bin/csh
+
+set usrdir = ../lib
+set usrlib = ($usrdir/ttyux.o $usrdir/get_lib.a $usrdir/util_lib.a)
+
+f77 -c rextsources.f
+f77 -c rexttargets.f
+f77 -c rfiles.f
+f77 -c rglobal.f
+f77 -c main.f
+f77 -c ropseq.f
+f77 -c rspecact.f
+f77 -c rtables.f
+f77 -c ftables.f
+f77 -c readvarftab.f
+f77 -c varftab.f
+f77 -c rnetwork.f
+f77 -c rpgen.f
+f77 -c special_case_varftab.f
+f77 -c writeftables.f
+f77 -c getdischarge.f
+f77 -c getwdm.f
+
+f77 -c main_scenario.f
+f77 -c rtables_scenario.f
+
+f77 -o ../../bin/rug.exe rextsources.o rexttargets.o rfiles.o rglobal.o main.o ropseq.o rspecact.o rtables.o ftables.o readvarftab.o varftab.o rnetwork.o rpgen.o special_case_varftab.o writeftables.o getdischarge.o getwdm.o $usrlib
+
+f77 -o ../../bin/scenario_rug.exe rextsources.o rexttargets.o rfiles.o rglobal.o main_scenario.o ropseq.o rspecact.o rtables_scenario.o ftables.o readvarftab.o varftab.o rnetwork.o rpgen.o special_case_varftab.o writeftables.o getdischarge.o getwdm.o $usrlib
+
+rm *.o

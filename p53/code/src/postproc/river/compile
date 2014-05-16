@@ -1,0 +1,7 @@
+f77 -c checkflow.f
+f77 -c WDMinfo.f
+
+ar rv postriverlib.a checkflow.o WDMinfo.o
+
+rm *.o
+

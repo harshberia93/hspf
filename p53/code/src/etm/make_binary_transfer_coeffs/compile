@@ -1,0 +1,30 @@
+#!/bin/csh
+
+source ../../../set_wdmlibdir
+set wdmlibdir = ../../$wdmlibdir
+set lib1 = $wdmlibdir/wdmlib.a
+set lib2 = $wdmlibdir/adwdmlib.a
+set lib3 = $wdmlibdir/utillib.a
+set usrdir = ../../lib
+set usrlib = ($usrdir/get_lib.a $usrdir/util_lib.a)
+
+
+f77 -c -O fix_negatives.f
+f77 -c -O getbmpbreaks.f
+f77 -c -O getbmpspecs.f
+f77 -c -O gethgmr.f
+f77 -c -O getlandbreaks.f
+f77 -c -O gettransport.f
+f77 -c -O getpoundbreaks.f
+f77 -c -O hydroeffect.f
+f77 -c -O main.f
+f77 -c -O maketransfile.f
+f77 -c -O randomeffect.f
+f77 -c -O readcontrol.f
+f77 -c -O returnfq.f
+f77 -c -O sortB.f
+
+f77 -O -o ../../../bin/make_binary_transfer_coeffs.exe fix_negatives.o getbmpbreaks.o getbmpspecs.o gethgmr.o getlandbreaks.o gettransport.o getpoundbreaks.o hydroeffect.o main.o maketransfile.o randomeffect.o readcontrol.o sortB.o returnfq.o $usrlib ../../lib/dsn/dsn_utils.o $lib1 $lib2 $lib3
+
+rm *.o
+

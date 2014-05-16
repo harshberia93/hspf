@@ -1,0 +1,28 @@
+f77 -c main_aveann.f
+f77 -c readDATaveann.f
+f77 -c readEOaveann.f
+
+f77 -c main_annual.f
+f77 -c readDATannual.f
+f77 -c readEOannual.f
+
+f77 -c main_monthly.f
+f77 -c readDATmonthly.f
+f77 -c readEOmonthly.f
+
+f77 -c loadinfosmall.f
+f77 -c masslinksmall.f
+f77 -c getDFmethod.f
+
+f77 -c main_data_only_aveann.f
+f77 -c main_pssep_only_aveann.f
+f77 -c readPSSEPaveann.f
+
+f77 -o ../../../../bin/sumout_aveann.exe main_aveann.o loadinfosmall.o masslinksmall.o getDFmethod.o readDATaveann.o readEOaveann.o ../../../lib/get_lib.a ../../../lib/util_lib.a ../../../lib/ttyux.o
+ f77 -o ../../../../bin/sumout_data_only_aveann.exe main_data_only_aveann.o loadinfosmall.o masslinksmall.o readDATaveann.o readEOaveann.o ../../../lib/get_lib.a ../../../lib/util_lib.a ../../../lib/ttyux.o
+ f77 -o ../../../../bin/sumout_pssep_only_aveann.exe main_pssep_only_aveann.o loadinfosmall.o masslinksmall.o readPSSEPaveann.o readEOaveann.o ../../../lib/get_lib.a ../../../lib/util_lib.a ../../../lib/ttyux.o
+ f77 -o ../../../../bin/sumout_monthly.exe main_monthly.o loadinfosmall.o masslinksmall.o readDATmonthly.o readEOmonthly.o ../../../lib/get_lib.a ../../../lib/util_lib.a ../../../lib/ttyux.o
+ f77 -o ../../../../bin/sumout_annual.exe main_annual.o loadinfosmall.o masslinksmall.o readDATannual.o readEOannual.o ../../../lib/get_lib.a ../../../lib/util_lib.a ../../../lib/ttyux.o
+
+ rm *.o
+
