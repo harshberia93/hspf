@@ -1,0 +1,8 @@
+
+  set perlnds = ( for hvf pul puh bar ext pas trp urs alf hyw hyo hom hwm lwm nhy npa nal nho nhi nlo )
+
+# pervious - forest, harvested forest, low intensity pervious urban, high intensity pervious urban, bare-construction, extractive, pasture, trampled, nursery, alfalfa, hay with nutrients, hay without nutrients, hightill without manure, hightill with manure, lowtill with manure, nutrient management hay, nutrient management pasture, nutrient management alfalfa, nutrient management hitil without manure, nutrient management hitil with manure, nutrient management lotil
+
+  set implnds = ( afo iml imh css )
+
+# animal feeding operations, low intensity impervious urban, high intensity impervious urban

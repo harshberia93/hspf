@@ -1,0 +1,11 @@
+This dataset, ns611a902
+ was created by gshenk
+ 
+ on
+Mon Feb  9 16:55:17 EST 2009
+ 
+ from the old data set  ns611a807
+ by replacing the old atmospheric deposition with the deposition in
+/bluefish/archive/modeling//input/unformatted/atdep/CMAQ/dry_2009_02_09/Chesapeake.base2002.12km/
+Using the code
+/bluefish/archive/modeling//code/bin/add_atdep_grimm07_CMAQ12_ORG_PO4

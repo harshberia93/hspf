@@ -1,0 +1,11 @@
+This dataset, 8405xyz
+ was created by gshenk
+ 
+ on
+Fri Feb 20 12:38:12 EST 2009
+ 
+ by starting with the wdms in 8405
+ and adding the temperature and potential evapotranspiration data in
+../../..//input/unformatted/precip_some_met/xyz_lauren_hay_model/xyz_2006_11_29/
+Using the code
+../../..//code/bin/add_xyz_PET_and_temp

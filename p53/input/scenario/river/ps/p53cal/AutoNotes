@@ -1,0 +1,13 @@
+This dataset, p53cal
+ was created by jwu
+ 
+ on
+Fri Mar 19 12:21:20 EDT 2010
+ 
+Using the code
+../../..//code/bin/create_phase53_2_calib_ps_wdms.exe
+ 
+and the data in
+/model/p5_big_dataset_storage/point_source/calib_p53_2010_03_18/PS_CAL_Non_CSO_2010_03_18.txt
+and 
+/model/p5_big_dataset_storage/point_source/calib_p53_2010_03_18/PS_CAL_CSO_2010_03_18.txt
